@@ -5,7 +5,7 @@ const notesrouter=require("./router/routes");
 const { connect } = require('./config/dbconfig.js');
 const { default: ratelimiter } = require('./middleware/Ratelimit.js');
 app.use(cors({
-    origin:"http://localhost:5173"
+    origin:"https://notes-fullstack-mu.vercel.app"
 }))
 app.use(express.json());
 app.use(ratelimiter)
